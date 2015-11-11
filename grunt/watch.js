@@ -9,6 +9,11 @@ module.exports = function( grunt ) {
             tasks: [ 'sass:dev' ]
         },
 
+        html: {
+            files: './src/**/*.html',
+            tasks: [ 'jekyll', 'copy', 'sass:dev' ]
+        },
+
         scripts: {
             files: './src/assets/js/**/*.js',
             tasks: [ 'copy:scripts' ]
