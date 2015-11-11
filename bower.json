@@ -1,0 +1,24 @@
+{
+  "name": "programai",
+  "description": "A blog for software developers.",
+  "main": "index.js",
+  "authors": [
+    "Andrew C. Pacifico <andrewcpacifico@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "programai"
+  ],
+  "homepage": "https://github.com/programai/programai.github.io",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

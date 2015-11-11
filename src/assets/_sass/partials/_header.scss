@@ -1,0 +1,54 @@
+#top-menu {
+    background: $primaryColor;
+    font-size: 13px;
+
+    > main {
+        // display: flex
+        @include flexbox;
+
+        color: #fff;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+
+        > .menu {
+            margin-left: auto;
+        }
+    }
+}
+
+#toggle-top-menu {
+    cursor: pointer;
+    display: none;
+    line-height: 45px;
+    text-align: center;
+
+    &:before {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        margin-right: 1em;
+    }
+}
+
+.menu-toggled:before {
+    content: "\f00d" !important;
+}
+
+.menu-item-top {
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        background: $secondaryColor; 
+    }
+
+    > a {
+        display: inline-block;
+        line-height: 45px;
+        min-width: 15px;
+        padding: 0 20px;
+        text-align: center;
+    } 
+}
+
+@import 'header-phone';
