@@ -51,4 +51,36 @@
     } 
 }
 
-@import 'header-phone';
+#site-header {
+    background: #fff;
+    padding: 20px 0;
+}
+
+#site-header-logo {
+    @include flexbox;
+
+    width: 300px;
+}
+
+#main-menu {
+    @include flexbox;
+    @include align-items(center);
+
+    margin-left: auto;
+}
+
+.mainmenu-item {
+    &:hover {
+        background: $secondaryColor; 
+        color: #fff;
+    }
+
+    > a {
+        display: inline-block;
+        line-height: 55px;
+        padding: 0 20px;
+    }
+
+    display: inline-block;
+    text-align: center;
+}
