@@ -45,16 +45,13 @@
         </a>
         <nav id="main-menu">
             <ul class="menu">
+                {% for menu in site.main_menu %}
                 <li class="menu-item mainmenu-item">
-                    <a href="#">
-                        Contato 
+                    <a href="{{menu.url}}">
+                        {{menu.title}}
                     </a>
                 </li>
-                <li class="menu-item mainmenu-item">
-                    <a href="#">
-                        Sobre 
-                    </a>
-                </li>
+                {% endfor %}
             </ul>
         </nav>
     </main>

@@ -26,3 +26,14 @@ twitter_url: http://twitter.com/programaiblog
 fb_url: http://fb.com/programaiblog
 gplus_url: http://google.com/+ProgramaiBlog
 youtube_url: http://www.youtube.com/c/ProgramaiBlog
+
+# Main Application Menu
+main_menu:
+    - title: "Início"
+      url: "//programai.com"
+
+    - title: "Web"
+      url: "//programai.com/web"
+
+    - title: "Android"
+      url: "//programai.com/android"
