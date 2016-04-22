@@ -12,5 +12,6 @@ module.exports = function(grunt) {
     require('./grunt/connect.js')(grunt);
     require('./grunt/concurrent.js')(grunt);
     require('./grunt/htmlmin.js')(grunt);
+    require('./grunt/compass.js')(grunt);
 
 };

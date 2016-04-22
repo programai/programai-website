@@ -1,86 +1,78 @@
 #top-menu {
-    background: $primaryColor;
-    font-size: 13px;
+  background: $primaryColor;
+  font-size: 13px;
 
-    > main {
-        // display: flex
-        @include flexbox;
+  > main {
+    @include display-flex;
 
-        color: #fff;
-        margin: 0 auto;
-        max-width: 1200px;
-        width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 
-        > .menu {
-            margin-left: auto;
-        }
+    > .menu {
+      margin-left: auto;
     }
+  }
 }
 
-#toggle-top-menu {
-    cursor: pointer;
-    display: none;
-    line-height: 45px;
-    text-align: center;
-
-    &:before {
-        content: "\f0c9";
-        font-family: FontAwesome;
-        margin-right: 1em;
-    }
+#toggle-top-menu, #toggle-main-menu {
+  display: none;
 }
 
 .menu-toggled:before {
-    content: "\f00d" !important;
+  content: "\f00d" !important;
 }
 
 .menu-item-top {
-    cursor: pointer;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background: $secondaryColor; 
+  }
+
+  > a {
     display: inline-block;
-
-    &:hover {
-        background: $secondaryColor; 
-    }
-
-    > a {
-        display: inline-block;
-        line-height: 45px;
-        min-width: 15px;
-        padding: 0 20px;
-        text-align: center;
-    } 
+    line-height: 45px;
+    min-width: 15px;
+    padding: 0 20px;
+    text-align: center;
+  } 
 }
 
 #site-header {
-    background: #fff;
-    padding: 20px 0;
+  background: #fff;
+  max-width: 100%;
+  padding: 20px 0;
 }
 
 #site-header-logo {
-    @include flexbox;
-
-    width: 300px;
+  background: url('../img/programai-header-logo.png');
+  background-size: 100% auto;
+  height: 54px;
+  width: 300px;
 }
 
 #main-menu {
-    @include flexbox;
-    @include align-items(center);
+  @include display-flex;
+  @include align-items(center);
 
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .mainmenu-item {
-    &:hover {
-        background: $secondaryColor; 
-        color: #fff;
-    }
+  &:hover {
+    background: $secondaryColor; 
+    color: #fff;
+  }
 
-    > a {
-        display: inline-block;
-        line-height: 55px;
-        padding: 0 20px;
-    }
-
+  > a {
     display: inline-block;
-    text-align: center;
+    line-height: 55px;
+    padding: 0 20px;
+  }
+
+  display: inline-block;
+  text-align: center;
 }

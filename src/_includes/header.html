@@ -1,58 +1,56 @@
 <nav id="top-menu">
-    <main>
-        <div id="toggle-top-menu">Menu</div>
-        <ul class="menu">
-            <li class="menu-item menu-item-top">
-                <a href="#">
-                    Contato 
-                </a>
-            </li>
-            <li class="menu-item menu-item-top">
-                <a href="#">
-                    Sobre 
-                </a>
-            </li>
-            <li class="menu-item menu-item-top">
-                <a href="{{site.fb_url}}" target="_blank">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="menu-item menu-item-top">
-                <a href="{{site.twitter_url}}" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li class="menu-item menu-item-top">
-                <a href="{{site.gplus_url}}" target="_blank">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-            </li>
-            <li class="menu-item menu-item-top">
-                <a href="{{site.youtube_url}}" target="_blank">
-                    <i class="fa fa-youtube-play"></i>
-                </a>
-            </li>
-        </ul>
-    </main>
+  <main>
+    <div id="toggle-top-menu">Menu</div>
+    <ul class="menu">
+      <li class="menu-item menu-item-top">
+        <a href="#">
+          Contato 
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="#">
+          Sobre 
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{site.fb_url}}" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{site.twitter_url}}" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{site.gplus_url}}" target="_blank">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{site.youtube_url}}" target="_blank">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </li>
+    </ul>
+  </main>
 </nav>
 <header id="site-header">
-    <main class="container">
-        <a href="{{site.url}}">
-            <img id="site-header-logo" 
-                src="{{site.url}}/assets/img/programai-header-logo.png"
-                alt="ProgramAi Logo">
-            </img>
-        </a>
-        <nav id="main-menu">
-            <ul class="menu">
-                {% for menu in site.main_menu %}
-                <li class="menu-item mainmenu-item">
-                    <a href="{{menu.url}}">
-                        {{menu.title}}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </main>
+  <main class="container">
+    <a href="{{site.url}}">
+      <div id="site-header-logo"></div>
+    </a>
+    <nav id="main-menu">
+      <div id="toggle-main-menu">Menu</div>
+      <ul class="menu">
+        {% for menu in site.main_menu %}
+        <li class="menu-item mainmenu-item">
+          <a href="{{menu.url}}">
+            {{menu.title}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </main>
 </header>
