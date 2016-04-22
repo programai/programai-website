@@ -1,0 +1,26 @@
+#site-footer {
+  width: 100%;
+}
+
+#site-info {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+
+  > .container {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    @include transition(all .1s ease-in-out);
+
+    &:hover {
+      color: #606060;
+    }
+  }
+}
