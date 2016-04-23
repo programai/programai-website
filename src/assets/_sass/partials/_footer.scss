@@ -1,4 +1,5 @@
 #site-footer {
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -12,11 +13,12 @@
     @include display-flex;
     @include flex-direction(column);
     @include align-items(center);
+
+    text-align: center;
   }
 
   a {
     color: #fff;
-    text-decoration: none;
     @include transition(all .1s ease-in-out);
 
     &:hover {

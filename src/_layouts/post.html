@@ -1,15 +1,30 @@
 ---
 layout: default
 ---
-<div class="post">
-
+<article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+    <p class="post-meta">
+      <span class="post-date" itemprop="datePublished">
+        {{ page.date | localize: "%d de %B de %Y" }}
+      </span>
+
+      por <span class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      {% if page.author %} 
+      <a href="{{page.author.url}}" target="_blank" itemprop="url">
+        <span class="author-name" itemprop="name">{{ page.author.name }}</span>
+      </a>
+      {% else %}
+      <a href="{{site.author.url}}" target="_blank" itemprop="url">
+        <span class="author-name" itemprop="name">{{ site.author.name }}</span>
+      </a>
+      {% endif %}
+      </span>
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+  <main class="post-content" itemprop="articleBody">
+    {{content}}
+  </main>
+</article>

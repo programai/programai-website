@@ -1,0 +1,27 @@
+.post {
+  background: #fff;
+  padding: 40px;
+}
+
+.post-title {
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 85%;
+
+  a {
+    @include transition(all .1s ease-in-out);
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: #1E73BE;
+    }
+  }
+}

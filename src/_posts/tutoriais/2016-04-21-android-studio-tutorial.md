@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-10-24 12:05:14
-categories: jekyll update
-permalink: /jekyll
+title:  "Iniciando na Programação Android - Android Studio Tutorial"
+date:   2015-09-20 16:00:00
+categories: mobile android
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 

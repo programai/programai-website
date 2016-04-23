@@ -10,16 +10,23 @@ url: "//localhost:8000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+permalink: /:categories/:title/
+
+lang: pt-BR
+
+author:
+  name: 'Andrew Pacifico'
+
 # Build settings
 markdown: kramdown
 exclude: [ 
-    node_modules, 
-    bower_components, 
-    bower.json, 
-    package.json,
-    README.md,
-    Gruntfile.js,
-    grunt
+  node_modules, 
+  bower_components, 
+  bower.json, 
+  package.json,
+  README.md,
+  Gruntfile.js,
+  grunt
 ]
 
 twitter_url: http://twitter.com/programaiblog
@@ -29,11 +36,11 @@ youtube_url: http://www.youtube.com/c/ProgramaiBlog
 
 # Main Application Menu
 main_menu:
-    - title: "Início"
-      url: "//programai.com"
+  - title: "Início"
+    url: "//programai.com"
 
-    - title: "Web"
-      url: "//programai.com/web"
+  - title: "Web"
+    url: "//programai.com/web"
 
-    - title: "Android"
-      url: "//programai.com/android"
+  - title: "Android"
+    url: "//programai.com/android"
