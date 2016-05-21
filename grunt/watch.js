@@ -9,6 +9,11 @@ module.exports = function( grunt ) {
       tasks: [ 'compass:dev' ]
     },
 
+    markdown: {
+      files: './src/**/*.md',
+      tasks: [ 'jekyll', 'copy', 'compass:dev' ]
+    },
+
     html: {
       files: './src/**/*.html',
       tasks: [ 'jekyll', 'copy', 'compass:dev' ]

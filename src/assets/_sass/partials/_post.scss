@@ -1,6 +1,7 @@
 .post {
   background: #fff;
   padding: 40px;
+  width: 880px;
 }
 
 .post-title {
@@ -24,4 +25,40 @@
       color: #1E73BE;
     }
   }
+}
+
+.post-image-wrapper {
+  text-align: center;
+}
+
+.post-image, .section-image {
+  height: auto;
+  width: 100%;
+}
+
+.ads-toppost-left {
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.post-figure {
+  margin: auto;
+  width: 400px;
+
+  &.medium {
+    width: 600px;
+  }
+
+  > .caption {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }

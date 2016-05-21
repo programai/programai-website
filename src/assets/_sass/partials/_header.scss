@@ -61,6 +61,10 @@
   @include align-items(center);
 
   margin-left: auto;
+
+  a {
+    transition: none;
+  }
 }
 
 .mainmenu-item {

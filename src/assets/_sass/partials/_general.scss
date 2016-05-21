@@ -6,12 +6,46 @@ body {
   background: $backgroundColor;
   font-family: $fontFamily;
   font-weight: 400;
+  color: #3a3a3a;
   padding: 0;
   margin: 0;
 }
 
 a {
+  color: #1e73be;
   text-decoration: none;
+  transition: all .1s ease-in-out;
+
+  &:visited {
+    color: #1e73be;
+  }
+
+  &:hover {
+    color: #000;
+  }
+}
+
+p {
+  color: #3a3a3a;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: none;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 20px;
 }
 
 .menu-item {

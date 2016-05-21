@@ -16,6 +16,7 @@ lang: pt-BR
 
 author:
   name: 'Andrew Pacifico'
+  url: 'http://google.com/+AndrewPacifico'
 
 # Build settings
 markdown: kramdown
@@ -44,3 +45,6 @@ main_menu:
 
   - title: "Android"
     url: "//programai.com/android"
+
+gems: 
+  - jemoji

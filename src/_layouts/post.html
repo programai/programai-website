@@ -22,9 +22,37 @@ layout: default
       </span>
       {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
+
+    {% if page.image %}
+    <div class="post-image-wrapper">
+      <img src="{{site.url}}/{{page.image}}" alt="{{page.title}}" class="post-image">
+    </div>
+    {% endif %}
   </header>
 
   <main class="post-content" itemprop="articleBody">
+    <div class="ads-toppost-left">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Retângulo float esq. início post. -->
+      <ins class="adsbygoogle"
+        style="display:inline-block;width:336px;height:280px"
+        data-ad-client="ca-pub-8829411195649661"
+        data-ad-slot="6654796833"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
     {{content}}
   </main>
+  
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Final Conteúdo -->
+<ins class="adsbygoogle" 
+  style="display:block" 
+  data-ad-client="ca-pub-8829411195649661" 
+  data-ad-slot="3230972433" 
+  data-ad-format="auto"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </article>
