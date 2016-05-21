@@ -47,6 +47,10 @@
   padding: 20px 0;
 
   margin-bottom: 20px;
+  
+  > .container {
+      @include flex-direction(row);
+  }
 }
 
 #site-header-logo {

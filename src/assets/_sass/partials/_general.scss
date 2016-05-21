@@ -66,6 +66,7 @@ h3 {
 
 .container {
   @include display-flex;
+  @include flex-direction(column);
   margin: 0px auto;
   width: $containerWidth;
   max-width: 100%;
