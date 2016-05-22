@@ -3,6 +3,7 @@
   margin-bottom: 20px;
   padding: 40px;
   width: 880px;
+  max-width: 100%;
 }
 
 .post-title {
@@ -40,11 +41,13 @@
 .ads-toppost-left {
   margin: 0 10px 10px 0;
   float: left;
+  max-width: 100%;
 }
 
 .post-figure {
   margin: auto;
   width: 400px;
+  max-width: 100%;
 
   &.medium {
     width: 600px;
@@ -68,4 +71,21 @@
   background: #fff;
   padding: 40px;
   width: 880px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .ads-toppost-left {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    padding: 40px 30px 40px 30px;
+  }
+  
+  .post-title {    
+    font-size: 30px;    
+  }
 }
