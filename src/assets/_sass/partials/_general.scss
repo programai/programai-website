@@ -83,6 +83,20 @@ img {
   padding: 0 10px;
 }
 
+.pagination {
+    @extend .post;
+    
+    text-align: center;
+    
+    > .next {
+        float: right;
+    }
+    
+    > .previous {
+        float: left;
+    }
+}
+
 @media screen and (max-width: 768px) {
   h1 {      
     font-size: 30px;  
