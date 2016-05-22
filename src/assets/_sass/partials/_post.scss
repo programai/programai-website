@@ -14,9 +14,11 @@
 
 .post-meta {
   color: #666;
+  font-family: inherit;
   font-size: 85%;
 
   a {
+    color: inherit;
     @include transition(all .1s ease-in-out);
 
     &:visited {
@@ -72,6 +74,21 @@
   padding: 40px;
   width: 880px;
   max-width: 100%;
+}
+
+.comments-link {
+  &:before {
+    content: "\f075";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-right: 5px;
+    width: 13px;
+    text-align: center;   
+  }
 }
 
 @media screen and (max-width: 480px) {

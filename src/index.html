@@ -41,6 +41,12 @@ layout: home
         ... <a href="{{ post.url }}">Ler mais</a>    
       {% endif %}
     </main>
+    
+    <footer class="post-meta">
+      <div class="comments-link">        
+        <a href="{{ site.url}}/{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+      </div>
+    </footer>
   </article>
   {% endfor %}
   
