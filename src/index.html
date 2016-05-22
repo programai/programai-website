@@ -1,7 +1,58 @@
----
-layout: home
+--- 
+layout: home 
 ---
 
-<div id="main">
-    <h1>teste</h1>
+<div id="post-list">  
+  {% for post in paginator.posts %}  
+  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h2 itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>      
+      <p class="post-meta">
+        <span class="post-date" itemprop="datePublished">
+          {{ post.date | localize: "%d de %B de %Y" }}
+        </span>
+
+        por <span class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        {% if post.author %} 
+        <a href="{{post.author.url}}" target="_blank" itemprop="url">
+          <span class="author-name" itemprop="name">{{ post.author.name }}</span>
+        </a>
+        {% else %}
+        <a href="{{site.author.url}}" target="_blank" itemprop="url">
+          <span class="author-name" itemprop="name">{{ site.author.name }}</span>
+        </a>
+        {% endif %}
+        </span>
+        {% if post.meta %} • {{ post.meta }}{% endif %}
+      </p>
+
+      {% if post.image %}
+      <div class="post-image-wrapper">
+        <a href="{{ post.url }}">
+          <img src="{{site.url}}/{{post.image}}" alt="{{post.title}}" class="post-image">
+        </a>        
+      </div>
+      {% endif %}
+    </header>
+
+    <main class="post-content" itemprop="articleBody">      
+      {{ post.content | get_post_excerpt }} 
+      {% if post.content | post_contains_excerpt_tag %} 
+        ... <a href="{{ post.url }}">Ler mais</a>    
+      {% endif %}
+    </main>
+  </article>
+  {% endfor %}
+  
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> 
+    {% else %}
+    <span class="previous">Previous</span> {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a> {% else %}
+    <span class="next ">Next</span> 
+    {% endif %}
+  </div>
 </div>

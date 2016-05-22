@@ -13,7 +13,7 @@ um aplicativo para Android. Se não conhece, dê uma olhada nesse artigo onde
 eu mostro as principais formas de Como criar um aplicativo para Android, 
 e os requisitos para começar.
 
-Até o ano passado a principal forma de desenvolvimento para Android era o 
+Até o ano passado <!---excerpt-break--> a principal forma de desenvolvimento para Android era o 
 [Android Developer Tools](https://developer.android.com/tools/help/adt.html){:target="_blank"}, 
 um plugin para o [ Eclipse ](https://eclipse.org/){:target="_blank"} que adiciona as ferramentas 
 necessárias para o desenvolvimento para o SO móvel da Google.
