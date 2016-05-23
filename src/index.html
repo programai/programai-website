@@ -29,7 +29,7 @@ layout: home
       {% if post.image %}
       <div class="post-image-wrapper">
         <a href="{{ post.url }}">
-          <img src="{{site.url}}/{{post.image}}" alt="{{post.title}}" class="post-image">
+          <img src="{{site.url}}{{post.image}}" alt="{{post.title}}" class="post-image">
         </a>        
       </div>
       {% endif %}
@@ -43,6 +43,20 @@ layout: home
     </main>
     
     <footer class="post-meta">
+      <div class="post-category">
+        {% assign pcaturl="" %}
+        {% for cat in post.categories%}
+        {% assign pcat=cat %}      
+        {% endfor %}
+        <a href="{{site.url}}/{{post.categories | join: '/'}}">{{pcat | capitalize}}</a>
+      </div>
+      {% if post.tags %}
+      <div class="post-tags">
+        {% for tag in post.tags %}          
+          <a href="{{site.url}}/tag/{{tag | url_encode }}/">{{tag}}</a>{% if forloop.last != true %},{% endif %} 
+        {% endfor %}        
+      </div>          
+      {% endif %}            
       <div class="comments-link">        
         <a href="{{ site.url}}/{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
       </div>

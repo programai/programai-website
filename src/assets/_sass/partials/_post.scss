@@ -91,6 +91,36 @@
   }
 }
 
+.post-category {
+  &:before {
+    content: "\f07b";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-right: 5px;
+    width: 13px;
+    text-align: center;
+  }
+}
+
+.post-tags {
+  &:before {
+    content: "\f02c";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-right: 5px;
+    width: 13px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .ads-toppost-left {
       display: none;

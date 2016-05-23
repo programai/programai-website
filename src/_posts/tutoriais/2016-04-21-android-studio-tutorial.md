@@ -3,6 +3,13 @@ layout: post
 title:  "Iniciando na Programação Android - Android Studio Tutorial"
 date:   2015-09-20 16:00:00
 categories: mobile android
+tags:
+  - Android Studio
+  - Fácil
+  - Hello World
+  - Iniciantes
+  - Programação
+  - Tutoriais
 imagePath: /assets/img/posts/mobile/android/android-studio-tutorial
 image: /assets/img/posts/mobile/android/android-studio-tutorial/featured.jpg
 ---
