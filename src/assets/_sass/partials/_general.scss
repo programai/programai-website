@@ -31,6 +31,12 @@ p {
   line-height: 1.5;
 }
 
+h1 {    
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 300;
+}
+
 h2 {
   font-family: inherit;
   font-style: inherit;
@@ -75,4 +81,32 @@ img {
   width: $containerWidth;
   max-width: 100%;
   padding: 0 10px;
+}
+
+.pagination {
+    @extend .post;
+    
+    text-align: center;
+    
+    > .next {
+        float: right;
+    }
+    
+    > .previous {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {      
+    font-size: 30px;  
+  }
+
+  h2 {  
+    font-size: 25px;  
+  }
+
+  h3 {  
+    font-size: 20px;
+  }
 }

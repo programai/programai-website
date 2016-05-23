@@ -10,6 +10,8 @@ url: "//localhost:8000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+paginate: 10
+paginate_path: "/:num/"
 permalink: /:categories/:title/
 
 lang: pt-BR
@@ -48,3 +50,5 @@ main_menu:
 
 gems: 
   - jemoji
+  - jekyll-paginate
+  - jekyll-read-more
