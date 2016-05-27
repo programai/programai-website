@@ -74,13 +74,16 @@ img {
   padding: 0;
 }
 
-.container {
-  @include display-flex;
-  @include flex-direction(column);
+.container {  
   margin: 0px auto;
   width: $containerWidth;
-  max-width: 100%;
-  padding: 0 10px;
+  max-width: 100%;  
+}
+
+#page-content {
+  > .container {
+    @include display-flex;
+  }
 }
 
 .pagination {
@@ -95,6 +98,16 @@ img {
     > .previous {
         float: left;
     }
+}
+
+@media (min-width: 1025px) {
+  .right-sidebar {    
+    width: 25%;
+  }
+  
+  .main-content {    
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {

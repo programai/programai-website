@@ -2,6 +2,7 @@ dist
 .sass-cache
 *.swp
 *.swo
+.vscode
 node_modules
 bower_components
 Gemfile.lock
