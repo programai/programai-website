@@ -13,8 +13,8 @@
           <span class="author-name" itemprop="name">{{ .Params.Author.Name }}</span>
         </a>
         {{ else }}
-        <a href="{{ .Site.Author.URL }}" target="_blank" itemprop="url">
-          <span class="author-name" itemprop="name">{{ .Site.Author.Name }}</span>
+        <a href="{{ .Site.Params.Author.URL }}" target="_blank" itemprop="url">
+          <span class="author-name" itemprop="name">{{ .Site.Params.Author.Name }}</span>
         </a>
         {{ end }}
         </span>      
