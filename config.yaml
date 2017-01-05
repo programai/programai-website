@@ -1,0 +1,33 @@
+languageCode: pt-br
+title: ProgramAi! - Dicas, cursos e tutoriais de programação.
+baseURL: http://programai.com/
+
+menu:
+  main:
+    - name: "Início"
+      URL: "/"
+      Weight: 1
+
+    - name: "Web"
+      URL: "/web/"
+      Weight: 2
+
+    - name: "Android"
+      URL: "/android/"
+      Weight: 3
+
+params:
+  author:
+      name: Andrew C. Pacifico
+      url: http://andrewpacifico.com
+
+  description: >
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
+
+  social:
+    facebook: http://facebook.com/programai
+    twitter: http://twitter.com/programai
+    gPlus: http://google.com/+ProgramaiBlog
+    youtube: http://www.youtube.com/c/ProgramaiBlog

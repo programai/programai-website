@@ -1,0 +1,54 @@
+<nav id="top-menu">
+  <main>
+    <div id="toggle-top-menu">Menu</div>
+    <ul class="menu">
+      <li class="menu-item menu-item-top">
+        <a href="#">
+          Contato 
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="#">
+          Sobre 
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{ .Site.Params.Social.Facebook }}" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{ .Site.Params.Social.Twitter }}" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{ .Site.Params.Social.GPlus }}" target="_blank">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="menu-item menu-item-top">
+        <a href="{{ .Site.Params.Social.Youtube}}" target="_blank">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </li>
+    </ul>
+  </main>
+</nav>
+<header id="site-header">
+  <main class="container">
+    <a href="{{ .Site.BaseURL }}">
+      <div id="site-header-logo"></div>
+    </a>
+    <nav id="main-menu">
+      <div id="toggle-main-menu">Menu</div>
+      <ul class="menu">
+        {{ range .Site.Menus.main }}        
+        <li class="menu-item mainmenu-item">
+          <a href="{{.URL}}">{{.Name}}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </main>
+</header>

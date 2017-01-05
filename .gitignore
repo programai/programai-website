@@ -1,4 +1,5 @@
 dist
+public
 .sass-cache
 *.swp
 *.swo

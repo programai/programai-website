@@ -1,0 +1,137 @@
+.post {
+  background: #fff;
+  margin-bottom: 20px;  
+  padding: 40px;  
+  max-width: 100%;
+}
+
+.post-title {
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.post-meta {
+  color: #666;
+  font-family: inherit;
+  font-size: 85%;
+
+  a {
+    color: inherit;
+    @include transition(all .1s ease-in-out);
+
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: #1E73BE;
+    }
+  }
+}
+
+.post-image-wrapper {
+  text-align: center;
+}
+
+.post-image, .section-image {
+  height: auto;
+  width: 100%;
+}
+
+.ads-toppost-left {
+  margin: 0 10px 10px 0;
+  float: left;
+  max-width: 100%;
+}
+
+.post-figure {
+  margin: auto;
+  width: 400px;
+  max-width: 100%;
+
+  &.medium {
+    width: 600px;
+  }
+
+  > .caption {
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post-comments {    
+  background: #fff;
+  padding: 40px;  
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.comments-link {
+  &:before {
+    content: "\f075";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-right: 5px;
+    width: 13px;
+    text-align: center;   
+  }
+}
+
+.post-category {
+  &:before {
+    content: "\f07b";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-right: 5px;
+    width: 13px;
+    text-align: center;
+  }
+}
+
+.post-tags {
+  &:before {
+    content: "\f02c";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    position: relative;
+    margin-right: 5px;
+    width: 13px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ads-toppost-left {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    padding: 40px 30px 40px 30px;
+  }
+  
+  .post-title {    
+    font-size: 30px;    
+  }
+}
