@@ -1,0 +1,56 @@
+<div class="main-content">
+  <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="headline">{{ .Title }}</h1>
+      <p class="post-meta">
+        <span class="post-date" itemprop="datePublished">
+          {{ .Date }}
+        </span>
+
+        por <span class="post-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        {{ if .Params.Author }}
+        <a href="{{ .Params.Author.URL }}" target="_blank" itemprop="url">
+          <span class="author-name" itemprop="name">{{ .Params.Author.Name }}</span>
+        </a>
+        {{ else }}
+        <a href="{{ .Site.Author.URL }}" target="_blank" itemprop="url">
+          <span class="author-name" itemprop="name">{{ .Site.Author.Name }}</span>
+        </a>
+        {{ end }}
+        </span>      
+      </p>
+
+      {{ if .Params.Image }}
+      <div class="post-image-wrapper">
+        <img src="{{ .Params.Image }}" alt="{{ .Title }}" class="post-image">
+      </div>
+      {{ end }}
+    </header>
+
+    <main class="post-content" itemprop="articleBody">
+      <div class="ads-toppost-left">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Retângulo float esq. início post. -->
+        <ins class="adsbygoogle"
+          style="display:inline-block;width:336px;height:280px"
+          data-ad-client="ca-pub-8829411195649661"
+          data-ad-slot="6654796833"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      {{ .Content }}
+    </main>
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Final Conteúdo -->
+    <ins class="adsbygoogle" 
+      style="display:block" 
+      data-ad-client="ca-pub-8829411195649661" 
+      data-ad-slot="3230972433" 
+      data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </article>
+</div>
