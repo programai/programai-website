@@ -1,6 +1,25 @@
-languageCode: pt-br
-title: ProgramAi! - Dicas, cursos e tutoriais de programação.
+DefaultContentLanguage: pt-br
 baseURL: http://programai.com/
+
+Languages:
+  en:
+    title: ProgramAi! - Tips, courses and development tutorials.
+
+  pt-br:
+    title: ProgramAi! - Dicas, cursos e tutoriais de programação.
+    months:
+      1: Janeiro
+      2: Fevereiro
+      3: Março
+      4: Abril
+      5: Maio
+      6: Junho
+      7: Julho
+      8: Agosto
+      9: Setembro
+      10: Outubro
+      11: Novembro
+      12: Dezembro
 
 menu:
   main:
@@ -9,11 +28,11 @@ menu:
       Weight: 1
 
     - name: "Web"
-      URL: "/web/"
+      URL: "/categories/web/"
       Weight: 2
 
     - name: "Android"
-      URL: "/android/"
+      URL: "/categories/android/"
       Weight: 3
 
 params:
