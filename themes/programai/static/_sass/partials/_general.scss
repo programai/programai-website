@@ -81,6 +81,8 @@ img {
 }
 
 #page-content {
+  margin: 20px 0;
+  
   > .container {
     @include display-flex;
   }
