@@ -1,7 +1,12 @@
 .sidebar-widget {
   background: #fff;
   font-size: 17px;
+  margin-top: 20px;
   padding: 40px;
+
+  &:first-child {
+    margin-top: 0;
+  }
   
   ul {
     margin: 0;
@@ -24,6 +29,6 @@
   text-transform: none;  
 }
 
-.fb-page-widget {
+.fb-page-widget, .adsense-widget {
   padding: 0;
 }
