@@ -168,6 +168,9 @@ img {
     line-height: 55px;
     padding: 0 20px; }
 
+#ads-top {
+  text-align: center; }
+
 @media screen and (max-width: 768px) {
   #toggle-main-menu {
     display: block;
@@ -251,6 +254,9 @@ img {
     transition: all 0.1s ease-in-out; }
     #site-info a:hover {
       color: #606060; }
+
+#ads-bottom {
+  text-align: center; }
 
 .post, .pagination {
   background: #fff;

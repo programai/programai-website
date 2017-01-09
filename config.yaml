@@ -1,6 +1,10 @@
 DefaultContentLanguage: pt-br
 baseURL: http://programai.com/
 
+ignoreFiles:
+  - "\\.scss$"
+  - "\\.scssc$"
+
 Languages:
   en:
     title: ProgramAi! - Tips, courses and development tutorials.
