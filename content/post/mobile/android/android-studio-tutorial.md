@@ -12,6 +12,7 @@ tags:
   - Programação
   - Tutoriais
 image: /img/posts/mobile/android/android-studio-tutorial/featured.jpg
+url: /mobile/android/android-studio-tutorial
 ---
 
 Se você é programador e resolveu iniciar no mundo da programação Android, 
