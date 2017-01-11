@@ -35,8 +35,8 @@ menu:
       URL: "/categories/web/"
       Weight: 2
 
-    - name: "Android"
-      URL: "/categories/android/"
+    - name: "Mobile"
+      URL: "/categories/mobile/"
       Weight: 3
 
 params:
