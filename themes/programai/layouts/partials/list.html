@@ -24,7 +24,7 @@
       {{ if .Params.Image }}
       <div class="post-image-wrapper">
         <a href="{{ .URL }}">
-          <img src="{{ .Site.BaseURL }}{{ .Params.Image }}" alt="{{ .Title }}" class="post-image">
+          <img src="{{ .Params.Image }}" alt="{{ .Title }}" class="post-image">
         </a>        
       </div>
       {{ end }}
