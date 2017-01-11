@@ -12,6 +12,7 @@ tags:
   - Node.js
   - Tutoriais  
 image: /img/posts/web/frontend/grunt/featured.png
+url: /web/frontend/grunt
 ---
 
 Você já parou para pensar em quantas tarefas repetidas você executa na hora de fazer *build/deploy* do seu projeto de 
