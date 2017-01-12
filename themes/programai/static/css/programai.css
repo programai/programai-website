@@ -43,6 +43,9 @@ h3 {
   text-transform: none;
   font-size: 20px; }
 
+h4, h5 {
+  font-size: 100%; }
+
 img {
   max-width: 100%; }
 
