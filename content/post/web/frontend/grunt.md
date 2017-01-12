@@ -13,6 +13,8 @@ tags:
   - Tutoriais  
 image: /img/posts/web/frontend/grunt/featured.png
 url: /web/frontend/grunt
+disqus_identifier: 182 http://programai.com/?p=182
+disqus_url: http://programai.com/web/frontend/grunt
 ---
 
 Você já parou para pensar em quantas tarefas repetidas você executa na hora de fazer *build/deploy* do seu projeto de 

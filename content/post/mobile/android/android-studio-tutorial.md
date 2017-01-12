@@ -13,6 +13,8 @@ tags:
   - Tutoriais
 image: /img/posts/mobile/android/android-studio-tutorial/featured.jpg
 url: /mobile/android/android-studio-tutorial
+disqus_identifier: 1 http://jambocoders.andrewpacifico.com/?p=1
+disqus_url: http://programai.com/mobile/android/android-studio-tutorial
 ---
 
 Se você é programador e resolveu iniciar no mundo da programação Android, 
