@@ -1,6 +1,8 @@
 ---
 title: Como criar um aplicativo para Android
 date: 2015-09-25 16:00:00
+description: Descubra como criar um aplicativo para android, os primeiros passos, o que é preciso para começar. 
+  Acesse e entre para o mercado que mais cresce atualmente
 categories: 
   - Mobile 
   - Android

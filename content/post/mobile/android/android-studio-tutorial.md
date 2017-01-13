@@ -1,6 +1,8 @@
 ---
 title: "Iniciando na Programação Android - Android Studio Tutorial"
 date: 2015-09-20 16:00:00
+description: Android Studio tutorial para iniciantes. Inicie na programação Android, aprenda a criar um app, e como 
+  executa-lo em um emulador ou dispositivo físico.
 categories: 
   - Mobile 
   - Android

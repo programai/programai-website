@@ -1,6 +1,8 @@
 ---
 title: "Grunt: Automatizando tarefas de build"
 date: 2015-10-11 16:00:00
+description: Trabalha com Frontend Web e não utiliza o Grunt? Está perdendo tempo. 
+  Literalmente! Aprenda a instalar, configurar, e aumente sua produtividade agora mesmo.
 categories: 
   - Web 
   - Frontend
