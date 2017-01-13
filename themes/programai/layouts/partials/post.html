@@ -1,8 +1,8 @@
 <div class="main-content">
   <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="headline">{{ .Title }}</h1>
-      <p class="post-meta">
+      <h1 class="post-title" itemprop="headline">{{ .Title }}</h1>    
+      <p class="post-meta">        
         <span class="post-date" itemprop="datePublished">
           {{ .Date.Day }} de {{ index .Site.Params.Months (printf "%d" .Date.Month) }} de {{ .Date.Year }}
         </span>
@@ -19,6 +19,8 @@
         {{ end }}
         </span>      
       </p>
+
+      <div class="addthis_inline_share_toolbox"></div>
 
       {{ if .Params.Image }}
       <div class="post-image-wrapper">
@@ -40,19 +42,28 @@
         </script>
       </div>
       {{ .Content | emojify }}
-    </main>
-    
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Final Conteúdo -->
-    <ins class="adsbygoogle" 
-      style="display:block" 
-      data-ad-client="ca-pub-8829411195649661" 
-      data-ad-slot="3230972433" 
-      data-ad-format="auto"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </article>
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Final Conteúdo -->
+      <ins class="adsbygoogle" 
+        style="display:block" 
+        data-ad-client="ca-pub-8829411195649661" 
+        data-ad-slot="3230972433" 
+        data-ad-format="auto"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </main> 
+
+    <footer class="post-footer">
+      <div class="share-bar-footer">
+        <div>Compartilhe</div>
+        <div class="addthis_inline_share_toolbox_7cg1"></div>
+      </div>   
+
+      <div class="addthis_relatedposts_inline"></div>   
+    </footer>       
+  </article>  
 
   <div class="post-comments">
     <div id="disqus_thread"></div>

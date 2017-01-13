@@ -120,6 +120,13 @@
   }
 }
 
+.share-bar-footer {
+  > div {
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .ads-toppost-left {
       display: none;
