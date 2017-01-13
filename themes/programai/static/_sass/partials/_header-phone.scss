@@ -14,9 +14,11 @@
 
   #main-menu {
     > .menu {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
+      z-index: 9999999;
+
       @include transform(translateX(-100%));
       @include transition(transform 0.5s);
 
