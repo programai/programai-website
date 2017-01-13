@@ -38,5 +38,7 @@
   <meta name="twitter:creator" content="@andrewcpacifico">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  {{ if .Params.Image }}
   <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
+  {{ end }}
 </head>
