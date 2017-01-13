@@ -120,6 +120,16 @@
   }
 }
 
+.post-footer {  
+  &:before {
+    border-top: 1px solid #ddd;
+    content: '';
+    display: block;                
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
 .share-bar-footer {
   > div {
     font-weight: bold;

@@ -56,6 +56,25 @@
     </main> 
 
     <footer class="post-footer">
+      <div class="post-meta">
+        {{ if .Params.categories }}
+        <div class="post-category">                            
+          {{ range last 1 .Params.categories }}
+          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </div>
+        {{ end }}   
+
+        {{ if .Params.tags }}
+        <div class="post-tags">
+          {{ $len := sub (len .Params.tags) 1 }}
+          {{ range $index, $tag := .Params.tags }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ if lt $index $len }},{{ end }}
+          {{ end }}
+        </div>          
+        {{ end }}
+      </div>
+
       <div class="share-bar-footer">
         <div>Compartilhe</div>
         <div class="addthis_inline_share_toolbox_7cg1"></div>
