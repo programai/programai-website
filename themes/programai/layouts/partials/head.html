@@ -30,6 +30,6 @@
   <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />  
 
   {{ if .Params.Image }}
-  <meta property="og:image" content="{{ .Params.Image }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}" />
   {{ end }}
 </head>
