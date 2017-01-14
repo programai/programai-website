@@ -1,5 +1,5 @@
 DefaultContentLanguage: pt-br
-baseURL: http://programai.com/
+baseURL: https://programai.com/
 
 ignoreFiles:
   - "\\.scss$"
