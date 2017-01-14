@@ -77,6 +77,11 @@ img {
   .pagination > .previous {
     float: left; }
 
+.breadcrumb {
+  padding: 0; }
+  .breadcrumb > li {
+    display: inline-block; }
+
 @media screen and (min-width: 768px) {
   .right-sidebar {
     width: 25%; }

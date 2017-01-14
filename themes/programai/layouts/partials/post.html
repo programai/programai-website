@@ -1,6 +1,18 @@
-<div class="main-content">
+<div class="main-content">  
   <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
+      <ol xmlns:v="http://rdf.data-vocabulary.org/#" class="breadcrumb">
+        <li typeof="v:Breadcrumb"><a href="/" rel="v:url" property="v:title">Início</a> » </li>
+        {{ if .Params.categories }}        
+          {{ range .Params.categories }}          
+          <li typeof="v:Breadcrumb">
+            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" rel="v:url" property="v:title">{{ . }}</a> » 
+          </li>
+          {{ end }}        
+        {{ end }}                           
+        <li typeof="v:Breadcrumb">{{ .Title }}</li>
+      </ol>
+
       <h1 class="post-title" itemprop="headline">{{ .Title }}</h1>    
       <p class="post-meta">        
         <span class="post-date" itemprop="datePublished">
