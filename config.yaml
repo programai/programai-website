@@ -47,7 +47,7 @@ params:
   description: ProgramAi! Blog com dicas, tutoriais, e cursos sobre programação.
 
   social:
-    facebook: http://facebook.com/programai
-    twitter: http://twitter.com/programai
+    facebook: http://facebook.com/programaiblog
+    twitter: http://twitter.com/programaiblog
     gPlus: http://google.com/+ProgramaiBlog
     youtube: http://www.youtube.com/c/ProgramaiBlog
