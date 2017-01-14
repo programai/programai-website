@@ -6,16 +6,12 @@
   {{ end }}  
 
   <meta charset="utf-8">
+
+  <base href="{{ .Site.BaseURL }}">
   <link rel="canonical" href="{{ .Permalink }}">
 
   <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="/css/programai.css" async>
-  <link rel="stylesheet" href="/css/EnlighterJS.min.css"async>
-  <link rel="stylesheet" href="/css/font-awesome.min.css" async>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-    rel='stylesheet' type='text/css' async>
 
   <!-- Initialize EnlighterJS -->
   <meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" 
@@ -41,4 +37,10 @@
   {{ if .Params.Image }}
   <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
   {{ end }}
+
+  <link rel="stylesheet" href="/css/programai.css" async>
+  <link rel="stylesheet" href="/css/EnlighterJS.min.css"async>
+  <link rel="stylesheet" href="/css/font-awesome.min.css" async>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+    rel='stylesheet' type='text/css' async>  
 </head>
