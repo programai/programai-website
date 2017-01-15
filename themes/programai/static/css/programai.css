@@ -375,6 +375,47 @@ img {
   font-weight: bold;
   margin: 20px 0; }
 
+.post-navigation {
+  border-top: 1px solid #ccc;
+  margin-top: 30px; }
+  .post-navigation > a {
+    color: #666;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 49%; }
+    .post-navigation > a:hover {
+      color: #1e73be; }
+  .post-navigation .previous-post {
+    float: left;
+    text-align: left; }
+    .post-navigation .previous-post:before {
+      content: "\f0d9";
+      display: inline-block;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      margin-right: 5px;
+      position: relative;
+      width: 13px;
+      text-align: center;
+      text-decoration: inherit; }
+  .post-navigation .next-post {
+    border-left: 1px solid #ccc;
+    float: right;
+    text-align: right; }
+    .post-navigation .next-post:after {
+      content: "\f0da";
+      display: inline-block;
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      margin-right: 5px;
+      position: relative;
+      width: 13px;
+      text-align: center;
+      text-decoration: inherit; }
+
 @media screen and (max-width: 480px) {
   .ads-toppost-left {
     display: none; } }

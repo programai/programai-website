@@ -1,4 +1,4 @@
-<div class="main-content">  
+<div class="main-content">    
   <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
       <ol xmlns:v="http://rdf.data-vocabulary.org/#" class="breadcrumb">
@@ -93,6 +93,18 @@
       </div>   
 
       <div class="addthis_relatedposts_inline"></div>   
+
+      <div class="post-navigation">
+        {{ if .PrevInSection }}
+        <a class="previous-post" href="{{ .PrevInSection.URL }}">{{ .PrevInSection.Title }}</a>
+        {{ end }}
+
+        {{ if .NextInSection }}
+        <a class="next-post" href="{{ .NextInSection.URL }}">{{ .NextInSection.Title }}</a>
+        {{ end }}
+
+        <div style="clear: both"></div>
+      </div>
     </footer>       
   </article>  
 
