@@ -1,0 +1,29 @@
+{{ if eq .Type "post"}}
+<script type="application/ld+json">
+  { 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": {{ .Title }},
+    "image": {{ .Params.Image | absURL }},
+    "genre": {{ range last 1 .Params.Categories }}{{ . }}{{ end }}, 
+    "keywords": "{{ delimit .Params.Tags " " }}", 
+    "wordcount": {{ .WordCount }},
+    "publisher": {
+      "@type": "Organization",
+      "name": "ProgramAi",
+      "logo": {{ "/img/programai-header-logo.png" | absURL }}
+    },
+    "url": {{ .Permalink }},
+    "datePublished": {{ dateFormat "2006-01-02" .Date }},
+    "dateCreated": {{  dateFormat "2006-01-02" .Date }},
+    "dateModified": {{  dateFormat "2006-01-02" .Date }},
+    "description": {{ .Description }},
+    "articleBody": {{ .Content }},
+    "author": {
+      "@type": "Person",
+      "name": {{ .Site.Params.Author.Name }},
+      "url": {{ .Site.Params.Author.Url }}
+    }
+  }
+</script>
+{{ end }}
