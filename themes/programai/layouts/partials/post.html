@@ -94,9 +94,44 @@
       </div>
 
       <div class="share-bar-footer">
-        <div>Compartilhe</div>
+        <h3>Compartilhe</h3>
         <div class="addthis_inline_share_toolbox_7cg1"></div>
       </div>   
+
+      <div class="author-data">
+        <h3>Sobre o Autor</h3>
+        <div class="author-image">
+          <img src="{{ .Site.Params.Author.Image }}" class="responsive-image"
+            alt="{{ .Site.Params.Author.Name }}" title="{{ .Site.Params.Author.Name }}">
+        </div>
+        
+        <div class="author-attributes">
+          <h2 class="author-name">{{ .Site.Params.Author.Name }}</h2>
+          <div class="social-profiles">
+            <a 
+              target="_blank" 
+              href="{{ .Site.Params.Author.Social.Github }}" 
+              class="author-github author-social-profile"></a>
+            <a 
+              target="_blank" 
+              href="{{ .Site.Params.Author.Social.Twitter }}" 
+              class="author-twitter author-social-profile"></a>
+            <a 
+              target="_blank" 
+              href="{{ .Site.Params.Author.Social.Facebook }}" 
+              class="author-fb author-social-profile"></a>
+            <a 
+              target="_blank" 
+              href="{{ .Site.Params.Author.Social.GPlus }}" 
+              class="author-gplus author-social-profile"></a>
+            <a 
+              target="_blank" 
+              href="{{ .Site.Params.Author.Social.Linkedin }}" 
+              class="author-linkedin author-social-profile"></a>
+          </div>
+          <div class="author-description">{{ .Site.Params.Author.Description | markdownify }}</div>
+        </div>
+      </div>
 
       <div class="addthis_relatedposts_inline"></div>   
 

@@ -42,7 +42,20 @@ menu:
 params:
   author:
       name: Andrew C. Pacifico
+      description: >
+          Bacharel em Ciência da Computação pela Universidade Federal do Amazonas, MBA em Gerenciamento de Projetos pela Fundação Getúlio Vargas.<br>
+          <br>
+          Atualmente trabalha como Desenvolvedor Web Fullstack na <a href="http://neemu.com/" target="_blank">Neemu</a>.<br>
+          <br>
+          Experiência em desenvolvimento nas liguagens C/C++, Java, C#, desenvolvimento Web, e Android.
       url: http://twitter.com/andrewcpacifico
+      image: http://graph.facebook.com/799249256779962/picture?type=large 
+      social:
+        facebook: http://fb.com/andrewcpacifico          
+        twitter: http://twitter.com/andrewcpacifico
+        gPlus: http://google.com/+AndrewPacifico
+        github: http://github.com/andrewcpacifico
+        linkedin: http://br.linkedin.com/in/andrewcpacifico
 
   description: ProgramAi! Blog com dicas, tutoriais, e cursos sobre programação.
 
