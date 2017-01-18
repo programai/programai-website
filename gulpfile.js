@@ -2,16 +2,27 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');
 var del = require('del');
+var merge2 = require('merge2');
 
 var cfg = {
   paths: {
     src: './public',
-    dist: './dist'
-  }
+    dist: './dist',
+    categories: {
+      mobile: '/mobile',
+      android: '/mobile/android',
+      web: '/web',
+      frontend: '/web/frontend'
+    }
+  },
 };
 
 gulp.task('clean:dist', () => {
   return del([cfg.paths.dist]);
+});
+
+gulp.task('clean:categories', () => {
+  return del([cfg.paths.dist + '/categories']);
 });
 
 gulp.task('images', () => {
@@ -44,9 +55,23 @@ gulp.task('fonts', () => {
     .pipe(gulp.dest(cfg.paths.dist + '/fonts'));
 });
 
+gulp.task('copyCategories', () => {
+  var tasks = [];
+
+  for (var cat in cfg.paths.categories) {
+    var t = gulp.src(cfg.paths.dist + '/categories/' + cat + '/**/*')
+      .pipe(gulp.dest(cfg.paths.dist + cfg.paths.categories[cat]));
+    tasks.push(t);
+  }
+
+  return merge2(tasks);
+});
+
 gulp.task('build', ['clean:dist'], (cb) => {
   runSequence(
     ['styles', 'js', 'images', 'html', 'fonts'],
+    'copyCategories',
+    'clean:categories',
     cb
   );
 });

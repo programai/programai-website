@@ -6,8 +6,10 @@
         {{ if .Params.categories }}        
           {{ range .Params.categories }}          
           <li typeof="v:Breadcrumb">
+            {{ $path := urlize . }}
+            {{ $cat := index $.Site.Params.Categories $path }}
             <a 
-              href="{{ "/categories/" | absLangURL }}{{ . | urlize }}" 
+              href="{{ $cat.url }}" 
               rel="v:url" 
               property="v:title">
               {{ . }}
@@ -15,6 +17,7 @@
           </li>
           {{ end }}        
         {{ end }}                           
+
         <li>{{ .Title }}</li>
       </ol>
 
@@ -77,8 +80,10 @@
       <div class="post-meta">
         {{ if .Params.categories }}
         <div class="post-category">                            
-          {{ range last 1 .Params.categories }}
-          <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ range last 1 .Params.Categories }}
+            {{ $path := urlize . }}
+            {{ $cat := index $.Site.Params.Categories $path }}
+            <a href="{{ $cat.url }}">{{ . }}</a>
           {{ end }}
         </div>
         {{ end }}   

@@ -40,8 +40,10 @@
     <footer class="post-meta">
       {{ if .Params.categories }}
       <div class="post-category">                            
-        {{ range last 1 .Params.categories }}
-        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ range last 1 .Params.Categories }}
+          {{ $path := urlize . }}
+          {{ $cat := index $.Site.Params.Categories $path }}
+          <a href="{{ $cat.url }}">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}   

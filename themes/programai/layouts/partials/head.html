@@ -7,10 +7,23 @@
     <title>{{ .Site.Title }}</title>
   {{ end }}  
 
+  {{- $.Scratch.Set "permalink" .Permalink -}}
+  {{- if in .URL "categories" -}}
+    {{- $url := trim .URL "/" -}}
+    {{- $tokens := split $url "/" -}}
+    {{- $catKey := index $tokens 1 -}}
+    {{- if $catKey -}}
+      {{- $cat := index $.Site.Params.Categories $catKey -}}
+      {{- $base := trim $.Site.BaseURL "/" -}} 
+      {{- $permalink := (print $base $cat.url) -}}
+      {{- $.Scratch.Set "permalink" $permalink -}}
+    {{- end -}}
+  {{- end -}}
+
   <meta charset="utf-8">
 
   <base href="{{ .Site.BaseURL }}">
-  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="canonical" href="{{ .Scratch.Get "permalink" }}">
   <link rel="publisher" href="{{ .Site.Params.Social.GPlus }}"/>
 
   <meta name="description" 
@@ -24,13 +37,13 @@
     data-selector-inline="code"/>
 
   <!-- fb open graph tags -->
-  <meta property="og:url" content="{{ .Permalink }}"/>
+  <meta property="og:url" content="{{ .Scratch.Get "permalink" }}"/>
   <meta property="og:type" content="{{ if eq .Type "post" }}article{{ else }}website{{ end }}" />  
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" 
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />  
   {{ if .Params.Image }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}" />
+  <meta property="og:image" content="{{ .Params.Image | absURL }}" />
   {{ end }}
 
   <!-- twitter card tags -->
@@ -41,7 +54,7 @@
   <meta name="twitter:description" 
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
   {{ if .Params.Image }}
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.Image }}">
+  <meta name="twitter:image" content="{{ .Params.Image | absURL }}">
   {{ end }}
 
   <link rel="stylesheet" href="/css/programai.css" async>

@@ -32,14 +32,24 @@ menu:
       Weight: 1
 
     - name: "Web"
-      URL: "/categories/web/"
+      URL: "/web/"
       Weight: 2
 
     - name: "Mobile"
-      URL: "/categories/mobile/"
+      URL: "/mobile/"
       Weight: 3
 
 params:
+  categories:
+    web:
+        url: "/web/"
+    frontend:
+        url: "/web/frontend/"
+    mobile:
+        url: "/mobile/"
+    android:
+        url: "/mobile/android/"
+
   author:
       name: Andrew C. Pacifico
       description: >
